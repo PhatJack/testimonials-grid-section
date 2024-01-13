@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Barlow";
+	src: url('./assets/BarlowSemiCondensed-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Barlow-Medium";
+	src: url('./assets/BarlowSemiCondensed-Medium.ttf');
+}
+
+@font-face {
+	font-family: "Barlow-Semibold";
+	src: url('./assets/BarlowSemiCondensed-SemiBold.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Barlow";
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 50% 50%;
+	gap: 30px 30px;
+	grid-template-areas: 
+	"a a b c"
+	"d e e c";
+}
+
+.a{
+	grid-area: a;
+}
+.b{
+	grid-area: b;
+}
+.c{
+	grid-area: c;
+}
+.d{
+	grid-area: d;
+}
+.e{
+	grid-area: e;
+}
